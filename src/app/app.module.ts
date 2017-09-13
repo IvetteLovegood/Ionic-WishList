@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 // #Services
 import { WishListService } from './services/wish-list.service';
@@ -51,7 +52,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
         WishListService,
         StatusBar,
         SplashScreen,
-        {provide: ErrorHandler, useClass: IonicErrorHandler}
+        {provide: ErrorHandler, useClass: IonicErrorHandler},
+        ScreenOrientation
     ]
 })
 export class AppModule {}
