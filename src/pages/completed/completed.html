@@ -9,7 +9,7 @@
 <ion-content padding>
 
     <!-- There is no Completed lists or any list at all -->
-    <ion-grid *ngIf="( _wishList.lists | pendings:true ).length === 0">
+    <ion-grid *ngIf="( _wishListService.lists | pendings:true ).length === 0">
         <ion-row>
             <ion-col class="text-center empty-box">
                 <span class="placeholder-ico happy-placeholder"></span>
@@ -23,7 +23,7 @@
 
 
 
-    <ion-card *ngFor="let list of _wishList.lists | pendings:true; let i = index">
+    <ion-card *ngFor="let list of _wishListService.lists | pendings:true; let i = index">
 
         <ion-item color="dark" (click)="listDetails(list, i)">
             <h2>{{ list.name }}</h2>
