@@ -14,3 +14,29 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$placeholdergrey: #C7C7C7;
+
+.text-center {
+    text-align: center;
+}
+
+.stroked {
+    text-decoration: line-through;
+}
+
+.empty-box {
+    padding-top: 40%;
+    color: $placeholdergrey
+}
+
+.placeholder-ico{
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    opacity: .2;
+}
+
+.happy-placeholder {
+    background: url('../assets/img/happy.png') center no-repeat;
+    background-size: contain;
+}
