@@ -2,5 +2,7 @@
   "name": "wishList",
   "app_id": "a63e7ceb",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
