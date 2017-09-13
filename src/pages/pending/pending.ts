@@ -16,7 +16,7 @@ export class PendingPage {
     constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
-        private _wishList: WishListService
+        private _wishListService: WishListService
      ) { }
 
     ionViewDidLoad() {

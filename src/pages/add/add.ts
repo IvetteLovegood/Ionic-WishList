@@ -40,7 +40,7 @@ export class AddPage {
         // Item Creation
         let item = new ListItem();
         item.name = this.itemName;
-        // Adding item to Items Array (befoRabbit Stuffre service call)
+        // Adding item to Items Array (before service call)
         this._items.push(item);
         this.itemName = "";
 
@@ -53,6 +53,8 @@ export class AddPage {
     saveList() {
         if( this.listName.length < 1) {
             this.showAlert();
+        } else if ( this._items.length < 1) {
+            return;
         } else {
             // Create new List Object and his list items
             let list = new List( this.listName );
